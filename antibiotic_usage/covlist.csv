@@ -1,0 +1,16 @@
+covariate,measure,gbd,include
+access2,mean,FALSE,TRUE
+depratio,total,FALSE,TRUE
+distriverslakes,mean,FALSE,TRUE
+dpt3_cov,mean,FALSE,TRUE
+edu_mean,mean,FALSE,TRUE
+ihmepm25,mean,FALSE,TRUE
+worldpop,total,FALSE,TRUE
+crutstmp,mean,FALSE,TRUE
+mapincidence,mean,FALSE,TRUE
+stunting_mod_b,mean,FALSE,TRUE
+fertility,mean,FALSE,TRUE
+gdp,perpixel,FALSE,TRUE
+nexndvi,mean,FALSE,TRUE
+ghslurbanicity,mean,FALSE,TRUE
+haqi,mean,TRUE,TRUE

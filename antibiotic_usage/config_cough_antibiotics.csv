@@ -1,0 +1,67 @@
+V1,V2
+use_share,TRUE
+indicator_family,binomial
+keep_inla_files,FALSE
+Regions,"c('dia_wssa', 'dia_s_america-tto')"
+individual_countries,FALSE
+year_list,c(2000:2018)
+yearload,annual
+interval_mo,12
+withtag,TRUE
+datatag,_2020_01_08
+time_stamp,TRUE
+makeholdouts,TRUE
+n_stack_folds,5
+yr_col,year
+ss_col,weighted_n
+long_col,longitude
+lat_col,latitude
+n_ho_folds,5
+ho_ts,500
+ho_mb,10
+slots,10
+inla_cores,5
+test,FALSE
+test_pct,5
+transform,inverse-logit
+stacked_fixed_effects,xgboost + gam + enet
+other_weight,
+use_child_country_fes,FALSE
+gbm_tc,5
+gbm_lr,0.001
+gbm_bf,0.75
+skiptoinla,FALSE
+skiptoinla_from_rundate,
+skipinla,FALSE
+stackers_in_transform_space,TRUE
+coefs_sum1,TRUE
+constrain_children_0_inf,FALSE
+use_stacking_covs,TRUE
+use_raw_covs,FALSE
+use_inla_country_fes,FALSE
+use_inla_country_res,TRUE
+use_gp,TRUE
+use_inla_nugget,TRUE
+mesh_s_max_edge,"c(0.25, 5)"
+mesh_s_offset,"c(1, 5)"
+intercept_prior,0
+mesh_t_knots,c(1:19)
+intstrat,eb
+samples,1000
+rake_transform,none
+pop_measure,a0004t
+st_targ,0.05
+target_type,less
+summstats,"c('mean', 'lower', 'upper')"
+fit_with_tmb,FALSE
+use_geos_nodes,TRUE
+modeling_shapefile_version,current
+raking_shapefile_version,current
+subnational_raking,FALSE
+ctry_re_prior,"list(prior = 'loggamma', param = c(2, 0.05))"
+nugget_prior,"list(prior = 'loggamma', param = c(2, 0.05))"
+rho_prior,"list(prior = 'normal', param = c(2.5, 1/(1.1^2)))"
+use_nid_res,TRUE
+nid_re_prior,"list(prior = 'loggamma', param = c(2, 0.05))"
+use_s2_mesh,FALSE
+s2_mesh_params,"c(50, 500, 1000) "
